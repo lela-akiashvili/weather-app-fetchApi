@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header,
+.places > div {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(img/weather.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: -1px -1px 0 #032b4e, 1px -1px 0 #032b4e, -1px 1px 0 #032b4e,
+    1px 1px 0 #032b4e;
+}
+header {
+  height: 70vh;
+}
+h1 {
+  width: fit-content;
+  font-size: 6rem;
+}
+header h2 {
+  font-size: 5rem;
+}
+header h3 {
+  font-size: 4rem;
+}
+form {
+  padding: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+input {
+  border-radius: 1.5rem;
+  border: 1px solid #007ae4;
+  padding: 1rem 1rem 1rem 2rem;
+  width: 35vw;
+  outline: none;
+}
+button {
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: pink;
+  color: white;
+}
+button:hover {
+  background-color: rgb(253, 161, 176);
+  cursor: pointer;
+}
+.info {
+  display: flex;
+  gap: 1rem;
+}
+i {
+  text-shadow: 0.4px #032b4e;
+}
+
+.hourly {
+  color: #007ae4;
+  padding: 1.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  overflow-x: auto;
+}
+.hourly > div {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  border: 1px solid #007ae4;
+}
+.hourly > div:hover {
+  background-color: #007ae4;
+  color: white;
+}
+.hourly > div > h3 {
+  border-bottom: 1px solid #007ae4;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d6ecff;
+  border-radius: 13px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #64b7ff;
+  cursor: pointer;
+}
+
+.daily {
+  padding: 3.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  text-wrap: nowrap;
+  text-align: center;
+  overflow-x: auto;
+}
+.daily > div {
+  color: #007ae4;
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  border: 1px solid #007ae4;
+}
+.daily > div:hover {
+  background-color: #007ae4;
+  color: white;
+}
+.places > div {
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+@media (min-width: 700px) {
+  h1 {
+    font-size: 8rem;
+  }
+}

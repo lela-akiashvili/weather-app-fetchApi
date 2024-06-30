@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.1/luxon.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/800e72e4f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1><span></span>°C</h1>
+
+      <div>
+        <div class="info">
+          <h2>Tbilisi</h2>
+          <span class="icon"></span>
+        </div>
+        <div class="info">
+          <h3 class="time"></h3>
+          <span class="date">date</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hourly"></div>
+      <div class="daily"></div>
+      <div class="places"></div>
+      <div style="display: flex; justify-content: center">
+        <button class="clear" style="display: none" onclick="location.reload()">
+          clear
+        </button>
+      </div>
+      <form action="">
+        <div>
+          <input type="text" id="city" placeholder="Enter City Name" />
+          <button type="button" class="add">+ add location</button>
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
